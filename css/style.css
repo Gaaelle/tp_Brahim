@@ -67,7 +67,9 @@ body{
 }
 .bannblue{
   background-color: #234e8b;
-	padding: 30px 50px;
+	padding: 30px 0px;
+	width: 95%;
+	margin: 2em 2.5%;
 }
 .intbann{
   color: white;
@@ -85,7 +87,7 @@ body{
   margin-top: 20px;
 }
 .gauche{
-  margin-left: 200px
+  margin-left: 200px;
 }
 .inscription{
   color:#234e8b;
@@ -180,9 +182,10 @@ body{
 .text1
 {
   color: #6cbe45;
-  font-size: 100px ;
+  font-size: 80px;
   padding-right: 120px;
   margin-bottom: 40px;
+	margin-right: 40px;
   }
 .maj
 {
@@ -203,6 +206,7 @@ body{
   padding-right: 120px;
   padding-left: 120px;
   text-align: right;
+	margin-right: 40px;
  }
 
 
@@ -244,6 +248,7 @@ footer{
 footer a {
  color:white;
 }
+
 @media screen and (max-width:736px){
     body{
         margin:0;
@@ -266,7 +271,7 @@ footer a {
         clear:both;
     }
     .text1{
-        font-size: 30px;
+        font-size: 25px;
         padding:0;
         padding-top: 20px;
         margin-bottom: 20px;
@@ -275,9 +280,8 @@ footer a {
         font-size: 35px;
     }
     .text2{
-        font-size:30px;
+        font-size:20px;
         padding:0;
-        text-align: left;
         margin-bottom: 10px;
     }
 /* MILIEU **************************/
@@ -288,6 +292,7 @@ footer a {
     .intbann{
         font-size: 20px;
         margin:0;
+				padding-right: 1em;
     }
         /*DEMI BORDUR VERT*/
     .text, .linkinscri{
@@ -297,11 +302,12 @@ footer a {
     .textblue, .linkblue1{
         padding:0;
         width:100%;
+				margin-left: -20px
     }
     .inscription{
         width:95%;
         height:60%;
-        font-size:30px;
+        font-size:20px;
         text-align: right;
         margin-right: 5px;
         margin-bottom: 15px;
@@ -320,7 +326,7 @@ footer a {
     .link{
         width:80%;
         text-align:right;
-        font-size: 30px;
+        font-size: 20px;
     }
 		.linkgreen{
 			word-wrap: break-word;
@@ -339,8 +345,10 @@ footer a {
         padding:0;
         padding-top: 20px;
         margin:0;
-
     }
+		.bold {
+			font-size: 22px;
+		}
 	/* FOOTER ************************/
 		footer {
 		   height: 50px;
@@ -355,12 +363,19 @@ footer a {
 		   margin-bottom: 50px;
 		}
 		.pdown {
-		   width: 85%;
+		   width: 100%;
 		   margin: 0;
 		   display: flex;
-		   font-size: 17px;
+		   font-size: 12px;
 		   text-align: left;
 		   margin-top: 7px;
+			 margin-left: auto;
+			 margin-right: auto;
+		}
+
+		.imgdown{
+			width:11%;
+			margin: 0% 2%;
 		}
 }
 /* MEDIAQUERIES FOOTER *********************/
@@ -372,7 +387,7 @@ footer a {
 	}
 	.allimg{
 		margin: 0;
-		padding: 0
+		padding: 0;
 	}
 	#poleemploi{
 		margin: 0;
@@ -405,7 +420,7 @@ footer a {
 /* fin bannière bleue*/
 /*partie gauche*/
 	.gauche{
-		margin-left: 50px;
+		margin-left: 5%;
 	}
 	.link{
 		margin:5px;
@@ -432,8 +447,13 @@ footer a {
 	}
 /*fin partie gauche*/
 /* début partie droite*/
+	.droite {
+		float: right;
+		width: 40%;
+	}
 	.inscription{
-		height: 385px
+		height: 300px;
+		float: none;
 	}
 	.textblue{
 		padding-top: 50px;
@@ -482,24 +502,31 @@ footer a {
 	}
 	.text2{
 		padding-right: 0;
-		font-size: 50px
+		font-size: 55px
 	}
 	.maj{
-		font-size: 90px
+		font-size: 150px
 	}
 	.bleu1{
-		font-size: 90px
+		font-size: 150px
+	}
+
+	.avril {
+		font-size: 70px;
 	}
 /* fin top*/
 /* bannière bleue*/
 	.intbann{
 		padding: 5px;
+		padding-right: 1em;
 		font-size: 50px
 	}
 /* fin bannière bleue*/
 /*partie gauche*/
 	.gauche{
-		margin-left: 50px;
+		margin-left: 150px;
+		width: 1100px;
+		text-align: right;
 	}
 	.link{
 		margin:5px;
@@ -514,6 +541,7 @@ footer a {
 	.address p{
 		font-size: 30px;
 	}
+
 	.img1{
 		margin: 0;
 		padding-top: 15px;
@@ -527,7 +555,8 @@ footer a {
 /*fin partie gauche*/
 /* début partie droite*/
 	.inscription{
-		height: 385px
+		height: 385px;
+		margin-right: 2.5%;
 	}
 	.textblue{
 		padding-top: 50px;
@@ -543,10 +572,13 @@ footer a {
 	}
 	.footer{
 		width: 900px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.pdown{
 		margin:0;
 		padding:0;
 		font-size: 13px;
+		width: 200px;
 	}
 }
