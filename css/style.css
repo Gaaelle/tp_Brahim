@@ -75,8 +75,9 @@ body{
   margin-left: 40px
 }
 #phrase1{
-  text-align: right;
 	line-height: 0.9em;
+	text-align: right;
+
 }
 #phrase2{
 	text-align: right;
@@ -270,6 +271,7 @@ footer a {
         padding:0;
         padding-top: 20px;
         margin-bottom: 20px;
+        text-align: center; 	
     }
     .maj, .bleu1{
         font-size: 35px;
@@ -277,8 +279,8 @@ footer a {
     .text2{
         font-size:30px;
         padding:0;
-        text-align: left;
         margin-bottom: 10px;
+        text-align: center;
     }
 /* MILIEU **************************/
         /*BAN BLEU */
@@ -388,7 +390,9 @@ footer a {
 	}
 	.text2{
 		padding-right: 0;
-		font-size: 50px
+		font-size: 50px;
+		text-align: center;
+
 	}
 	.maj{
 		font-size: 90px
@@ -400,7 +404,12 @@ footer a {
 /* bannière bleue*/
 	.intbann{
 		padding: 5px;
-		font-size: 25px
+		font-size: 25px;
+	}
+
+	#phrase1 {
+		text-align: right;
+
 	}
 /* fin bannière bleue*/
 /*partie gauche*/
@@ -482,7 +491,7 @@ footer a {
 	}
 	.text2{
 		padding-right: 0;
-		font-size: 50px
+		font-size: 50px;
 	}
 	.maj{
 		font-size: 90px
@@ -548,5 +557,45 @@ footer a {
 		margin:0;
 		padding:0;
 		font-size: 13px;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	#phrase1 {
+		text-align: left;
+	}
+
+	#phrase2 {
+		text-align: left;
+	}
+
+	.textblue {
+		text-align: center;
+	}
+
+	.linkinscri {
+		text-align: center;
+	}
+
+	.inscription {
+		border-right: 5px solid #6cbe45;
+		border-bottom: 5px solid #6cbe45;
+	}
+
+	.img2 {
+		margin-top: 70px;
+	}
+
+	.address {
+		text-align: left;
+	}
+
+	.imgdown {
+		width: 10%;
+	}
+
+	.pdown {
+		font-size: 
 	}
 }
