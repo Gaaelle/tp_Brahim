@@ -57,11 +57,22 @@ table {
 
 
 /* julian*/
-
-body{
-  margin-left: 70px;
-  margin-right: 70px
+.bloca {
+	width: 40%;
 }
+
+.bloca img {
+	width: 80%;
+}
+
+.blocb {
+	width: 40%;
+}
+
+.blocb img {
+	width: 80%;
+}
+
 .font{
   font-family: Bond4F;
 }
@@ -157,13 +168,13 @@ body{
 
 /*---------------------------header---------------------*/
 .allimg {
-  text-align: right;
+  display: flex;
+	justify-content: space-between;
 }
 #poleemploi
 {
   float: left;
 	margin-left: 203px;
-
 }
 #popschool
 {
@@ -174,7 +185,7 @@ body{
 #up
 {
   margin-top: 50px;
-  text-align: right;
+  text-align: center;
    font-family : Bond4F;
 }
 .text1
@@ -200,18 +211,19 @@ body{
 .text2
 {
   font-size: 70px;
-  padding-right: 120px;
-  padding-left: 120px;
   text-align: right;
+
  }
+
 
 
  /* FOOTER *****************************************/
 
-.footer{
- margin:2% ;
+.footer {
  display: block;
-
+ position: relative;
+ top: 15px;
+ margin: auto;
 }
 .lien_img{
 	 text-decoration: none;
@@ -239,6 +251,7 @@ footer{
  padding:8px;
  text-decoration: none;
  width: 100%;
+ margin-top: 40px;
 }
 
 footer a {
@@ -261,7 +274,7 @@ footer a {
         float: right;
     }
     #up{
-        text-align: right;
+        text-align: center;
         margin:0;
         clear:both;
     }
@@ -277,7 +290,7 @@ footer a {
     .text2{
         font-size:30px;
         padding:0;
-        text-align: left;
+        text-align: center;
         margin-bottom: 10px;
     }
 /* MILIEU **************************/
@@ -334,13 +347,17 @@ footer a {
         padding:5px;
         width:80%;
         font-size: 25px;
+				margin-top: 30px;
     }
     .contact{
         padding:0;
         padding-top: 20px;
         margin:0;
-
     }
+
+		.inscription {
+			display: none;
+		}
 	/* FOOTER ************************/
 		footer {
 		   height: 50px;
@@ -362,6 +379,20 @@ footer a {
 		   text-align: left;
 		   margin-top: 7px;
 		}
+
+	   .images {
+			 height: 220px;
+			 width: 40px;
+			 display: flex;
+			 flex-direction: column;
+			 justify-content: space-between;
+			 padding-right: 20px;
+			 max-height: 220px;
+		 }
+
+		 .candid2 {
+
+		 }
 }
 /* MEDIAQUERIES FOOTER *********************/
 @media screen and (min-width:737px) and (max-width:1024px){
@@ -388,8 +419,12 @@ footer a {
 	}
 	.text2{
 		padding-right: 0;
-		font-size: 50px
+		font-size: 50px;
+		width: 80%;
+		margin: auto;
+		text-align: center;
 	}
+
 	.maj{
 		font-size: 90px
 	}
@@ -456,6 +491,10 @@ footer a {
 		margin:0;
 		padding:0;
 		font-size: 13px;
+	}
+
+	.text {
+
 	}
 }
 /* achraf*/
@@ -548,5 +587,44 @@ footer a {
 		margin:0;
 		padding:0;
 		font-size: 13px;
+	}
+}
+
+@media all and (min-width: 528px) {
+	.images {
+		height: 200px;
+	}
+
+	.link {
+		height: 200px;
+	}
+}
+
+@media all and (min-width: 640px) {
+	.images {
+		height: 163px;
+	}
+}
+
+@media all and (min-width: 737px) {
+	.candid2 {
+			word-break: break-all;
+			display: none;
+	}
+
+	.images {
+		display: flex;
+		flex-direction: column;
+		margin-right: 20px;
+		margin-left: 20px;
+		justify-content: space-between;
+	}
+
+  .img3 {
+		display: none;
+	}
+
+	.img2 {
+		margin-bottom: 58px;
 	}
 }
